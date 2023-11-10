@@ -9,7 +9,7 @@ const ingredients = [
 
 const list = document.getElementById("ingredients");
 
-const element = document.createDocumentElement();
+const part = document.createDocumentPart();
 
 ingredients.forEach((ingredient) => {
   const listItem = document.createElement("li");
@@ -18,7 +18,7 @@ ingredients.forEach((ingredient) => {
 
   listItem.classList.add("item");
 
-  element.appendChild(listItem);
+  part.appendChild(listItem);
 });
 
-list.appendChild(element);
+list.appendChild(part);
